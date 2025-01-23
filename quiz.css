@@ -13,8 +13,6 @@ body {
     background-color: #f4f4f9;
     color: #333;
     line-height: 1.6;
-    padding: 0;
-    margin: 0;
 }
 
 .navbar {
@@ -59,72 +57,77 @@ body {
     color: #f39c12;
 }
 
-.header {
-    text-align: center;
-    background: url('opHeader.jpg') no-repeat center/cover;
-    color: #fff;
-    padding: 10vh 5%; 
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); 
-}
-
-.header h1 {
-    margin-bottom: 1rem;
-}
-
-.header p {
-    font-size: 1.25rem; 
-    margin-bottom: 2rem;
-}
-
-.header input {
-    padding: 0.75rem 1rem;
-    width: 60%;
-    max-width: 30rem; 
-    border: none;
-    border-radius: 0.5rem;
-    font-size: 1rem;
-}
-
-.main-content {
+.quiz-container {
     padding: 5% 5%;
 }
 
-.character-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    gap: 2rem;
-}
-
-.character-card {
-    background-color: #fff;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+.quiz-header {
     text-align: center;
-    padding: 1.5rem;
-    transition: transform 0.3s ease;
+    margin-bottom: 2rem;
 }
 
-.character-card:hover {
-    transform: translateY(-0.5rem);
+.quiz-header h1 {
+    font-size: 2.5rem; 
+    color: #222;
 }
 
-.character-card img {
-    width: 100%;
-    height: auto;
-    max-height: 10rem;
-    object-fit: cover;
-    border-radius: 0.5rem;
+#score, #timer {
+    font-size: 1.25rem; 
+    margin-top: 1rem;
 }
 
-.character-card h3 {
-    margin: 1rem 0 0.5rem;
+#question-container {
+    text-align: center;
+    margin-bottom: 2rem;
     font-size: 1.25rem;
+    color: #333;
 }
 
-.character-card p {
-    margin: 0.5rem 0;
+#indices {
+    text-align: center;
     font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+#input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#answer-input {
+    padding: 1rem;
+    width: 60%;
+    max-width: 25rem; 
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+#answer-input:focus {
+    border-color: #f39c12;
+}
+
+button {
+    padding: 1rem 2rem;
+    background-color: #f39c12;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e67e22;
+}
+
+#restart-game:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
 }
 
 footer {

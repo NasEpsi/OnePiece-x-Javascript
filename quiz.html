@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz One Piece</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="logoOp.jpg" alt="Logo One Piece">
+        </div>
+        <nav class="navbar-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </nav>
+    </nav>
+
+    <section class="quiz-container">
+        <div class="quiz-header">
+            <h1>Quiz One Piece</h1>
+            <div id="score">Score: 0</div>
+            <div id="timer">Temps restant: 30s</div>
+        </div>
+
+        <div id="question-container">
+            <p>Devinez le personnage en fonction des indices :</p>
+        </div>
+        
+        <div id="indices"></div>
+
+        <div id="input-container">
+            <input type="text" id="answer-input" placeholder="Ta réponse" />
+            <button id="submit-answer">Valider</button>
+            <button id="restart-game" disabled>Nouvelle partie</button>
+        </div>
+
+
+    </section>
+
+    <footer>
+        <p>&copy; 2025 One Piece Quiz. Tous droits réservés.</p>
+    </footer>
+    <script src="quiz.js"></script>
+</body>
+</html>

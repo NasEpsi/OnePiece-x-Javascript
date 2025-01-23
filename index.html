@@ -7,19 +7,34 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Décpuvres l'univers de One Oiece </h1>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="logoOp.jpg" alt="Logo" />
+        </div>
+        <ul class="navbar-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="header">
+        <h1>Découvres l'univers de One piece</h1>
+        <p>Apprends en plus sur One piece et testes tes connaissances</p>
+        <input type="text" id="search-bar" placeholder="Recherchez un personnage" />
     </header>
     
-    <div class="annuaire">
-        <h3>Tu veux tout savoir sur un personnage ? </h3>
-        <input type="text" id="search-bar" placeholder="Rechercher un personnage..." />
-        <div id="character-container">
-        <!-- Carte Ici  -->
-        </div> 
-    </div>
+    <main class="main-content">
+        <div id="character-container" class="character-grid">
+            <!-- Carte ixi -->
+        </div>
+    </main>
+
+    <footer id="contact">
+        <p>&copy; 2025 Nassim. Tous droits réservés.</p>
+        <p>Contactez-moi <a href="#">aaa@aaa.com</a></p>
+    </footer>
+    <script src="script.js"></script>
     
 </body>
-
-<script src="script.js"></script>
 </html>
